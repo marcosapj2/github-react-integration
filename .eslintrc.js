@@ -16,10 +16,12 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module'
   },
-  plugins: ['react', 'prettier'],
+  plugins: ['react', 'prettier', 'jsx-a11y'],
   rules: {
     'prettier/prettier': 'error',
-    'react/jsx-filename-extension': ['warn', { extends: ['.jsx', '.js'] }],
-    'import/prefer-default-export': 'off'
+    'react/jsx-filename-extension': ['warn', { extensions: ['.jsx', '.js'] }],
+    'import/prefer-default-export': 'off',
+    'no-console': ["error", { allow: ["warn", "error"] }]
+
   }
-}
+};

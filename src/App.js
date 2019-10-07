@@ -1,12 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ToastContainer } from 'react-toastify';
+import Routes from './routes';
+import GlobalStyle from './styles/global';
+import 'react-toastify/dist/ReactToastify.min.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello Rocketseat</h1>
-    </div>
+    <>
+      <Routes />
+      <GlobalStyle />
+      <ToastContainer />
+    </>
   );
 }
 
